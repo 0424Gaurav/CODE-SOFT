@@ -108,7 +108,7 @@ button:nth-child(1):hover{
 }
 .icons .fa-brands{
     cursor: pointer;
-    background: linear-gradient(#fff, #3877FF);
+    background: linear-gradient(#fff, #07a9e0);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -125,18 +125,18 @@ button:nth-child(1):hover{
     width: 32rem;
 }
 .circle:nth-child(2){
-    width: 24rem;
+    width: 26rem;
     background-image: url(profile-pic\ \(1\)\ \(1\).png);
     background-size: 100%;
     background-repeat: no-repeat;
-    border: .1rem solid white;
+    border: .1rem solid rgb(251, 245, 245);
     box-shadow: 
     0 0 1rem #fff,
     inset 0 0 1rem #fff,
-    0 0 2rem #3877FF,
-    inset 0 0 2rem #3877FF,
-    0 0 2rem #3877FF,
-    inset 0 0 2rem #3877FF;
+    0 0 2rem #ff0404fd,
+    inset 0 0 2rem #f60101f6,
+    0 0 2rem #fa0000,
+    inset 0 0 2rem #fa0915;
     
 }
 .navlist li a::after, .navlist .active::after{
@@ -308,7 +308,7 @@ button:nth-child(1):hover{
 }
 .contact h1{
    margin-bottom: 60px;
-    color: #fff;
+    color: #f6efef;
     font-size: 50px;
     font-weight: 600px;
 }
@@ -336,18 +336,18 @@ input, textarea{
     padding: 12px;
     border-radius: 8px;
     border: none;
-    background-color: #f8f9fa;
+    background-color: #f7f7f8;
     color: #333;
 }
 input:focus,
 textarea:focus{
     outline: none;
-    box-shadow: 0 0 8px #3877FF;
+    box-shadow: 0 0 8px #ff3838;
 }
 button{
     display: inline-block;
     padding: 12px 24px;
-    background-color: #3877FF;
+    background-color: #1fbbb9;
     color: #0c0b0b;
     border: none;
     cursor: pointer;
