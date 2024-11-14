@@ -1,60 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page</title>
-    <link rel="stylesheet" href="style.css">
+   <title>Calculator</title>
+   <link rel="stylesheet" href="style.CSS">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Welcome To Our Landing Page</h1>
-            <nav>
-                <ul>
-                    <li><a href="#features">Home</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#features">Product</a></li>
-                    <li><a href="#features">About</a></li>
-                    <li><a href="#features">Features</a></li>
-                    <li><a href="#features">Feedback</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
-    <section class="hero">
-        <div class="container">
-            <h2 class="main1">Get Started with Our Amazing Product</h2>
-            <p class="main2">Join us today and take your business to the next level!</p>
-            <div class="main"><a href="#contact" class="cta-button">Get Started</a></div>
-        </div>
-    </section>
-
-    <section id="features" class="features">
-        <div class="container">
-            <h2>Features</h2>
-            <div class="feature">
-                <h3>Feature One</h3>
-                <p>Description of feature one.</p>
+   <div id="calc">
+      <div id="content">
+         <form>
+            <div id="output">
+               <input type="text" id='res'>
             </div>
-            <div class="feature">
-                <h3>Feature Two</h3>
-                <p>Description of feature two.</p>
+            <div class="btn">
+               <input type="button" value='C' onclick="Clear()" id="clear">
+               <input type="button" value='←' onclick="Back()" id="backspace">
+               <input type="button" value='%' onclick="Solve('%')">
+               <input type="button" value='/' onclick="Solve('/')">
+               <br>
+               <input type="button" value='7' onclick="Solve('7')">
+               <input type="button" value='8' onclick="Solve('8')">
+               <input type="button" value='9' onclick="Solve('9')">
+               <input type="button" value='x' onclick="Solve('*')">
+               <br>
+               <input type="button" value='4' onclick="Solve('4')">
+               <input type="button" value='5' onclick="Solve('5')">
+               <input type="button" value='6' onclick="Solve('6')">
+               <input type="button" value='-' onclick="Solve('-')">
+               <br>
+               <input type="button" value='1' onclick="Solve('1')">
+               <input type="button" value='2' onclick="Solve('2')">
+               <input type="button" value='3' onclick="Solve('3')">
+               <input type="button" value='+' onclick="Solve('+')">
+               <br>
+               <input type="button" value='00' onclick="Solve('00')">
+               <input type="button" value='0' onclick="Solve('0')">
+               <input type="button" value='.' onclick="Solve('.')">
+               <input type="button" value='=' onclick="Result()">
             </div>
-            <div class="feature">
-                <h3>Feature Three</h3>
-                <p>Description of feature three.</p>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact">
-        <div class="container">
-            <h2>Contact Us</h2>
-            <p>Email: info@example.com</p>
-            <p>Phone: (123) 456-7890</p>
-        </div>
-    </footer>
+         </form>
+      </div>
+   </div>
+   <script src='script.js'></script>
 </body>
 </html>
